@@ -55,6 +55,14 @@
 					<configurationFile>${basedir}/src/main/resources/generatorConfig.xml</configurationFile>
 					<overwrite>true</overwrite>
 				</configuration>
+				<executions>
+					<execution>
+						<phase>install</phase>
+						<goals>
+							<goal>generate</goal>
+						</goals>
+					</execution>
+				</executions>
 			</plugin>
 		</plugins>
 	</build>
